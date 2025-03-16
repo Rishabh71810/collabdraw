@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
-import { JWT_SECRET } from '@repo/backend-common/config';
+import { JWT_SECRET } from '@repo/backend-common/config'
 
 // Extend Request type to include userId becsause typescript doesn't recognise userId as a property of Request
 interface AuthenticatedRequest extends Request {
